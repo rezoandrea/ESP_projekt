@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>  
+         
+    <title>Tvrtke</title>
+</head>
+<body>
+    {% for post in posts%}
+        <h1>{{post.naziv}}</h1>
+        <p>By {{post.adresa}} on {{post.datum_unosa}}</p>
+        <p>{{post.struka}}</p>
+    {%endfor%}
+</body>
+</html>
+
